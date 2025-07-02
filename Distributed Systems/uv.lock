@@ -1,0 +1,35 @@
+version = 1
+revision = 2
+requires-python = ">=3.12"
+
+[[package]]
+name = "distributed-systems"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pyro4" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pyro4", specifier = ">=4.82" }]
+
+[[package]]
+name = "pyro4"
+version = "4.82"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "serpent" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2e/0b/e1066a2ba154a1fd6ade41b35d38482fc399feb90fe4768ce8d6d3eb368c/Pyro4-4.82.tar.gz", hash = "sha256:511f5b0804e92dd77dc33adf9c947787e3f9e9c5a96b12162f0557a7c4ce21fb", size = 516110, upload-time = "2021-12-25T01:45:34.312Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/70/e3/8c4e0d24b46fbf02e6b2dc2da5d18f0c73cfd343a1fb01ae64c788c20e56/Pyro4-4.82-py2.py3-none-any.whl", hash = "sha256:bbf5d7413e616d3e1978a05d7caca62eec59692d2dab75dd22a4426ef9b8a691", size = 89999, upload-time = "2021-12-25T01:45:31.066Z" },
+]
+
+[[package]]
+name = "serpent"
+version = "1.41"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5c/b4/6dee78c531270d98b4166971c0d8b1432af05e10f887d52dbf536aaa23e3/serpent-1.41.tar.gz", hash = "sha256:0407035fe3c6644387d48cff1467d5aa9feff814d07372b78677ed0ee3ed7095", size = 88927, upload-time = "2022-06-26T13:53:42.834Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ad/86/e029bd8a451f145e28530128239be057ca6e701aac46ad0d0000f852d551/serpent-1.41-py3-none-any.whl", hash = "sha256:5fd776b3420441985bc10679564c2c9b4a19f77bea59f018e473441d98ae5dd7", size = 9573, upload-time = "2022-06-26T13:53:39.139Z" },
+]
