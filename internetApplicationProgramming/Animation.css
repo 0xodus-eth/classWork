@@ -1,0 +1,33 @@
+.animated-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #0000ff;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+.animated-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.logo-conatiner {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 100px;
+    animation: bounce 2s infinite
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}

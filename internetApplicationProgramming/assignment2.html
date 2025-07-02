@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <!-- Creating a form for user input -->
+    <h1>User Regstration</h1>
+    <form action="/submit" method="post">
+        <!-- User's full name input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- User's email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- User's password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+        <!-- User's phone input -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <!-- User's email input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Gender selection using radio buttons -->
+        <label for = "gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        
+
+       <!-- Label and file input for uploading a profile picture, restricted to image files -->
+        <label for="profile">Profile Picture:</label>
+        <input type="file" id="profile" name="profile" accept="image/*"><br><br>
+
+        <!-- Submit button for form submission -->
+        <input type="submit">Register</input>
+    </form>
+
+</body>
+</html>
